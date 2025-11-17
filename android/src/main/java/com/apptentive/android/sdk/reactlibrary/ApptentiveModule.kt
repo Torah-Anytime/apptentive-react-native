@@ -352,12 +352,12 @@ class ApptentiveModule(private val reactContext: ReactApplicationContext) :
     return currentActivity?.applicationContext as Application?
   }
 
-  override fun getApptentiveActivityInfo(): Activity? {
-    return currentActivity
+  private fun getApplicationContext(): Application? {
+  return reactContext.currentActivity?.applicationContext as Application?
   }
 
-  override fun getConstants(): MutableMap<String, Any> {
-    return mutableMapOf("unreadMessageCountChangedEvent" to UNREAD_MESSAGE_COUNT_CHANGED)
+  override fun getApptentiveActivityInfo(): Activity? {
+  return reactContext.currentActivity
   }
 
   override fun onHostResume() {
