@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-  s.dependency 'ApptentiveKit', '~> 6.9.2'
+  s.dependency 'ApptentiveKit', '~> 7.1.1'
   s.dependency "React-Core"
 end
